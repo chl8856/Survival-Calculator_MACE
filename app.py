@@ -152,7 +152,12 @@ mapper_vascular_access = {
     "Femoral artery": [0,1,0],
     "Other": [0,0,1]
 }
-
+mapper_cath_status = {
+    "Elective":  [1,0,0,0],
+    "Urgent":  [0,1,0,0],
+    "Emergent": [0,0,1,0],
+    "Salvage": [0,0,0,1]
+}
 mapper_vd = {  
     "No vessle disease": [1,0,0,0],
     "1 vessle disease": [0,1,0,0],
