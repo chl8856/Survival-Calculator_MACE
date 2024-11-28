@@ -168,7 +168,7 @@ mapper_tfg = {
 }
 
 mapper_insurance = {
-    "NHI": [1,0,0]
+    "NHI": [1,0,0],
     "Medical aid": [0,1,0],
     "Other": [0,0,1]
 }
@@ -188,7 +188,7 @@ mapper_dm = {
 }
 
 mapper_alcohol = {
-    "None": [1,0,0]
+    "None": [1,0,0],
     "Mild": [0,1,0],
     "Heavy": [0,0,1]
 }
