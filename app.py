@@ -230,7 +230,7 @@ with col2[0]:
     TroponinI             = st.slider("Troponin I, ng/ml", min_value=0, max_value=1000, value=20, step=1)
     MDRD                  = st.slider(r"GFR, ml/min/1.73m$^2$", min_value=5, max_value=300, value=75, step=5)
     UA                    = st.slider("Uric acid, mg/dL", min_value=1.0, max_value=50.0, value=5.5, step=0.5)
-    CRP                   = st.slider("CRP, mg/dL", min_value=0, max_value=30.0, value=1.5, step=0.5)   
+    CRP                   = st.slider("CRP, mg/dL", min_value=0.0, max_value=30.0, value=1.5, step=0.5)   
     Fluoro_time           = st.slider("Fluoro duration, min", min_value=5, max_value=240, value=30, step=5)   
     LVEF                  = st.slider("LVEF, %", min_value=15, max_value=80, value=60, step=5)
     MRCI_K_dis            = st.slider("MRCI on discharge", min_value=0, max_value=110, value=24, step=1)   
