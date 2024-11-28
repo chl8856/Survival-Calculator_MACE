@@ -240,26 +240,26 @@ with col2[0]:
     LVEF                  = st.slider("LVEF, %", min_value=15, max_value=80, value=60, step=5)
     MRCI_K_dis            = st.slider("MRCI on discharge", min_value=0, max_value=110, value=24, step=1)   
 
-X_in['TC']                = TC*(400-50)+50
-X_in['HDL']               = HDL*(100-13)+13
-X_in['New_LDL']           = New_LDL*(300-11)+11
-X_in['TG']                = TG*(300-15)+15
-X_in['CKMB']              = CKMB*(2000-0)+0
-X_in['TroponinI']         = TroponinI*(1000-0)+0
-X_in['Creatinine']        = Creatinine*(10.0-0.2)+0.2
-X_in['MDRD']              = MDRD*(300-5)+5
-X_in['HbA1c']             = HbA1c*(15-5)+5
-X_in['UA']                = UA*(50.0-1.0)+1.0
-X_in['Hemoglobin']        = Hemoglobin*(18.0-6.0)+6.0
-X_in['CRP']               = CRP*(30-0)+0
-X_in['alb_lab']           = alb_lab*(5.0-2.0)+2.0
-X_in['Fluoro_time']       = Fluoro_time*(240-5)+5
-X_in['Contrast_volume']   = Contrast_volume*(1000-0)+0
-X_in['LVEF']              = LVEF*(80-15)+15
-X_in['NRI']               = NRI*(100-35)+35
-X_in['MRCI_K_dis']        = MRCI_K_dis*(110-0)+0
-X_in['MRCI_slop']         = MRCI_slop*(80-(-50))+(-50)    
-    
+X_in['TC']                = (TC-50)/(400-50)
+X_in['HDL']               = (HDL-13)/(100-13)
+X_in['New_LDL']           = (New_LDL-11)/(300-11)
+X_in['TG']                = (TG-15)/(300-15)
+X_in['CKMB']              = (CKMB-0)/(2000-0)
+X_in['TroponinI']         = (TroponinI-0)/(1000-0)
+X_in['Creatinine']        = (Creatinine-0.2)/(10.0-0.2)
+X_in['MDRD']              = (MDRD-5)/(300-5)
+X_in['HbA1c']             = (HbA1c-5)/(15-5)
+X_in['UA']                = (UA-1.0)/(50.0-1.0)
+X_in['Hemoglobin']        = (Hemoglobin-6.0)/(18.0-6.0)
+X_in['CRP']               = (CRP-0)/(30-0)
+X_in['alb_lab']           = (alb_lab-2.0)/(5.0-2.0)
+X_in['Fluoro_time']       = (Fluoro_time-5)/(240-5)
+X_in['Contrast_volume']   = (Contrast_volume-0)/(1000-0)
+X_in['LVEF']              = (LVEF-15)/(80-15)
+X_in['NRI']               = (NRI-35)/(100-35)
+X_in['MRCI_K_dis']        = (MRCI_K_dis-0)/(110-0)
+X_in['MRCI_slop']         = (MRCI_slop-(-50))/(80-(-50))
+
 
 col3 = st.columns(3)
 with col3[0]:
