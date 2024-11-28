@@ -312,7 +312,7 @@ X_in['LM_disease'] = mapper_yes_no[LM_disease]
 
 col4 = st.columns(1)
 with col4[0]:
-    Adm_statu               = st.radio("Adm_status", list(mapper_adm), horizontal=True, index=0)
+    Adm_status              = st.radio("Adm_status", list(mapper_adm), horizontal=True, index=0)
     ECG                     = st.radio("ECG", list(mapper_ecg), horizontal=True, index=0)
     Vascular_access         = st.radio("Access route", list(mapper_vascular_access), horizontal=True, index=0)
     Cath_status             = st.radio("Cath_status", list(mapper_cath_status), horizontal=True, index=0)
