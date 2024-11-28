@@ -203,7 +203,7 @@ st.subheader("Patient Characteristics")
 col1 = st.columns(2)
 with col1[0]:
     age                      = st.slider("Age", min_value=22, max_value=100, value=65, step=1)   
-    bmi                      = st.slider("Body mass index (BMI)", min_value=14.0, max_value=43.0, value=25, step=0.1)
+    bmi                      = st.slider("Body mass index (BMI)", min_value=14.0, max_value=43.0, value=25.0, step=0.1)
 with col1[1]:
     sex                      = st.radio("Gender", list(mapper_sex), horizontal=True, index=1)
     
