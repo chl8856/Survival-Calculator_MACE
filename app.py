@@ -148,7 +148,7 @@ mapper_ecg = {
 }
 
 mapper_vascular_access = {
-    "Radial artery": [1,0,0]
+    "Radial artery": [1,0,0],
     "Femoral artery": [0,1,0],
     "Other": [0,0,1]
 }
