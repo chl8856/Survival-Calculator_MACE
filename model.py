@@ -148,7 +148,7 @@ def SQ_survival(x):
         
 #     pred      = get_ensemble_prediction(models_in, W_in, x, eval_times)
         
-    model = joblib.load('./saved/trained_SQ.joblib')
+    model = joblib.load('./saved/trained_SQ.gz')
     pred  = model.predict(X_te, time_horizons=eval_times)
 
     return 1. - pred
